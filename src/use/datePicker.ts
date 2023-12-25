@@ -506,7 +506,7 @@ export function createDatePicker(
       valuesAreEqual(dateValue.value, normalizedValue) &&
       clearIfEqual
     ) {
-      normalizedValue = null;
+      normalizedValue = dateValue.value;
     }
 
     // 3. Assignment

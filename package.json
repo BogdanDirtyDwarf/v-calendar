@@ -53,6 +53,8 @@
     "@types/resize-observer-browser": "^0.1.7",
     "date-fns": "^2.16.1",
     "date-fns-tz": "^2.0.0",
+    "esbuild": "^0.19.10",
+    "esbuild-wasm": "^0.19.10",
     "lodash": "^4.17.20",
     "vue-screen-utils": "^1.0.0-beta.13"
   },

@@ -90,6 +90,7 @@ export type DatePickerProps = Readonly<ExtractPropTypes<typeof propsDef>>;
 
 export const propsDef = {
   ...basePropsDef,
+  closeOnSelect: { type: Boolean, default: true },
   mode: { type: String, default: 'date' },
   modelValue: {
     type: [Number, String, Date, Object] as PropType<DatePickerModel>,
@@ -651,7 +652,7 @@ export function createDatePicker(
     const opts: Partial<UpdateOptions> = {
       patch: 'date',
       formatInput: true,
-      hidePopover: true,
+      hidePopover: props.closeOnSelect,
     };
     if (isRange.value) {
       const dragging = !isDragging.value;
